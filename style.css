@@ -101,6 +101,11 @@
   height: 100%;
 }
 
+.paragraph {
+  text-align:justify;
+  padding-left:5em;
+  padding-right:5em;
+}
 
 @media (max-width:700px){
   .featureSection {
@@ -123,7 +128,6 @@
   
   .titleH1 {
     margin: 0;
-    padding-left: 0.5em;
     font-size: 3em;
     font-weight: bold;
     text-align: center;
@@ -131,14 +135,29 @@
 
   .titleH2 {
     margin: 0;
-    padding-left: 1em;
     color: #D3D3D3;
     text-align: center;
   }
   
+  .leftpad {
+    margin: 0;
+    padding-left: 0;
+  }
+
   .iconImage {
     width: 5em;
     margin-bottom: 0.3em;
+  }
+
+  .paragraph {
+    text-align:justify;
+    padding: 0;
+  }  
+
+  .sectionTitle {
+    margin: 0;
+    padding-left: 0;
+    color: #53A2BE;
   }
 }
 
