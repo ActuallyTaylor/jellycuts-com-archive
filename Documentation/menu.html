@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=\"utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <link rel="icon" href="assets/Icon.png" />
+    <meta
+      name="description"
+      content="Jellycuts is the best way to create supercharged iOS shortcuts."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <h1>Menu</h1>
+
+    <h2>Notes</h2>
+
+    <p>
+      Menus allow you to give the user a bunch of options to work with. All
+      options in the upper list must have a case associated with it.
+    </p>
+
+    <h2>Syntax</h2>
+
+    <pre><code>
+    menu(•prompt•,{•Option 1•, •Option 2•}) { 
+      case(•Option 1•): 
+        •Actions•
+      case(•Option 2•): 
+        •Actions•
+    }
+    </code></pre>
+
+    <h2>Example</h2>
+
+    <pre><code>
+    menu("Choose an action", {Log Water, Workout}) { 
+      case("Log Water"):
+        runShortcut(Log Water) 
+      case"Workout"): 
+        runShortcut(Workout)
+    }
+    </code></pre>
+  </body>
+</html>

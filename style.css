@@ -10,12 +10,12 @@
 .titleH2 {
   margin: 0;
   padding-left: 1em;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 .iconImage {
-    width: 10em;
-    margin-bottom: 0.3em;
+  width: 10em;
+  margin-bottom: 0.3em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,7 +29,7 @@
 .sectionTitle {
   margin: 0;
   padding-left: 1em;
-  color: #53A2BE;
+  color: #53a2be;
 }
 
 .leftpad {
@@ -103,12 +103,44 @@
 }
 
 .paragraph {
-  text-align:justify;
-  padding-left:5em;
-  padding-right:5em;
+  text-align: justify;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
-@media (max-width:700px){
+.linkDiv {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkDiv a {
+  width: 100%;
+  background-color: #1a242f;
+  color: #dbdbdb;
+  text-align: center;
+  align-items: center;
+  border-radius: 7px;
+  margin: 0.5em;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+@media (prefers-color-scheme: light) {
+  .linkDiv a {
+    background-color: #f7f7f7;
+    color: #363636;
+  }
+}
+
+.bulletImage {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 700px) {
   .featureSection {
     margin: 2em;
     padding: 0;
@@ -117,7 +149,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .topdiv {
     padding: 0;
     display: flex;
@@ -126,7 +158,7 @@
     justify-content: center;
     margin-bottom: 1em;
   }
-  
+
   .titleH1 {
     margin: 0;
     padding: 0;
@@ -138,10 +170,10 @@
   .titleH2 {
     margin: 0;
     padding: 0;
-    color: #D3D3D3;
+    color: #d3d3d3;
     text-align: center;
   }
-  
+
   .leftpad {
     margin: 0;
     padding-left: 0;
@@ -153,14 +185,14 @@
   }
 
   .paragraph {
-    text-align:justify;
+    text-align: justify;
     padding: 0;
-  }  
+  }
 
   .sectionTitle {
     margin: 0;
     padding-left: 0;
-    color: #53A2BE;
+    color: #53a2be;
   }
 
   .appstoreButton {
@@ -168,6 +200,4 @@
     width: auto;
     margin-left: 0.2em;
   }
-  
 }
-
