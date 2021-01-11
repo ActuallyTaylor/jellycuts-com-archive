@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="en"><head><meta charset=\"utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>${i%.*}</title><link rel="icon" href="assets/Icon.png"><meta name="description" content="Jellycuts is the best way to create supercharged iOS shortcuts."/><link rel="stylesheet" href="/style.css" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"/></head><body>
-<h1>Get Phone Numbers From Input</h1>
+<h1>Get Item From List</h1>
 
 <h2>Notes</h2>
 
-<p>Gets phone numbers from the given input.</p>
+<p>Gets an item from the given list. If you choose to get items in range you can use the startIndex and endIndex to define the range, you do not need to give it an index.</p>
 
 <h2>Syntax</h2>
 
-<pre><code>getNumbersFrom(input: String (Allows Variables))</code></pre>
+<pre><code>getItemFromList(list: Variable, type: Type, index: String (No Variables), startIndex: String (No Variables), endIndex: String (No Variables))</code></pre>
 
 <h2>Example</h2>
 
-<pre><code>getNumbersFrom(input: "My Number is +(number)")</code></pre>
+<pre><code>getItemFromList(list: options, type: Item at Index, index: "3", startIndex: "", endIndex: "")</code></pre>
