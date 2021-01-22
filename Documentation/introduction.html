@@ -58,8 +58,8 @@
 </li>
 <li>Adding variables into text<ul>
 <li>In text variables can be used in a lot of different places across the app. They are most notably used in the Text action and whenever you are mixing variables with any text.</li>
-<li>To use an in-text variable simply place <code>+(•variable name)</code> within any string that excepts in text variables.</li>
-<li>Example: <code>&quot; Hello +(world name)!&quot;</code></li>
+<li>To use an in-text variable simply place <code>${Variable Name}</code> within any string that excepts in text variables.</li>
+<li>Example: <code>&quot; Hello ${world name}!&quot;</code></li>
 </ul>
 </li>
 </ol>
@@ -105,7 +105,7 @@
 <span class="hljs-selector-tag">var</span> sc = Shortcut <span class="hljs-selector-tag">input</span>
 <span class="hljs-function"><span class="hljs-title">if</span><span class="hljs-params">(sc .contains <span class="hljs-string">" iCloud"</span> )</span></span> {
 <span class="hljs-function"><span class="hljs-title">setClipboard</span><span class="hljs-params">(variable: sc)</span></span>
-<span class="hljs-function"><span class="hljs-title">sendNotification</span><span class="hljs-params">(body: <span class="hljs-string">" +(sc) copied to clipboard"</span> , title: <span class="hljs-string">" Successfully copied to clipboard"</span> )</span></span>
+<span class="hljs-function"><span class="hljs-title">sendNotification</span><span class="hljs-params">(body: <span class="hljs-string">"${sc} copied to clipboard"</span> , title: <span class="hljs-string">" Successfully copied to clipboard"</span> )</span></span>
 } <span class="hljs-keyword">else</span> {
 <span class="hljs-function"><span class="hljs-title">alert</span><span class="hljs-params">(message: <span class="hljs-string">" Your clipboard does not contain the phrase Hello World"</span> )</span></span>
 }
