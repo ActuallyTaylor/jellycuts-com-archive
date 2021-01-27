@@ -3,6 +3,7 @@
     "testflight_ended": true,
     "testflight_versions" :[
         "0.9(8)",
-        "0.9(9)"
+        "0.9(9)",
+        "0.9(10)"
     ]
 }
