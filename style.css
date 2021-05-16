@@ -1,206 +1,220 @@
 /* CSS files add styling rules to your content */
 
+:root {
+    --button-background: #f7f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --button-background: #161f27;
+    }
+}
+
 .titleH1 {
-  margin: 0;
-  padding-left: 0.5em;
-  font-size: 3em;
-  font-weight: bold;
+    margin: 0;
+    padding-left: 0.5em;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .titleH2 {
-  margin: 0;
-  padding-left: 1em;
-  color: #d3d3d3;
+    margin: 0;
+    padding-left: 1em;
+    color: #d3d3d3;
 }
 
 .iconImage {
-  width: 10em;
-  margin-bottom: 0.3em;
+    width: 10em;
+    margin-bottom: 0.3em;
+}
+
+.linkButton {
+    background-color: var(--button-background);
+    border-radius: 7px;
+    padding: 10px;
+    min-width: 125px;
+    min-height: 45px;
+    text-decoration: none;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
-  .titleH2 {
-    margin: 0;
-    padding-left: 1em;
-    color: #8b8b8b;
-  }
+    .titleH2 {
+        margin: 0;
+        padding-left: 1em;
+        color: #8b8b8b;
+    }
 }
 
 .sectionTitle {
-  margin: 0;
-  padding-left: 1em;
-  color: #53a2be;
+    margin: 0;
+    padding-left: 1em;
+    color: #53a2be;
 }
 
 .leftpad {
-  margin: 0;
-  padding-left: 2em;
+    margin: 0;
+    padding-left: 2em;
 }
 
 .topdiv {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-
-.titlediv {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
-}
-
-.appstoreButton {
-  height: 3em;
-  width: auto;
-  margin-left: 1em;
-}
-
-.explanationDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.featureSection {
-  margin: 2em;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.screenshot {
-  width: 20em;
-  height: auto;
-}
-
-.dscreenshot {
-  width: 25em;
-  height: auto;
-}
-
-.videoWrapper {
-  position: relative;
-  margin: 2em;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.paragraph {
-  text-align: justify;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-.linkDiv {
-  margin: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.linkDiv a {
-  width: 100%;
-  background-color: #1a242f;
-  color: #dbdbdb;
-  text-align: center;
-  align-items: center;
-  border-radius: 7px;
-  margin: 0.5em;
-  font-size: 1.5em;
-  padding: 0.5em;
-}
-
-@media (prefers-color-scheme: light) {
-  .linkDiv a {
-    background-color: #f7f7f7;
-    color: #363636;
-  }
-}
-
-.bulletImage {
-  width: 25px;
-  height: 25px;
-  background-color: #1a242f;
-  padding: 3px;
-  border-radius: 7px;
-}
-
-@media (max-width: 700px) {
-  .featureSection {
-    margin: 2em;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .topdiv {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 1em;
-  }
+}
 
-  .titleH1 {
-    margin: 0;
-    padding: 0;
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-  }
+.titlediv {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
 
-  .titleH2 {
-    margin: 0;
-    padding: 0;
-    color: #d3d3d3;
-    text-align: center;
-  }
-
-  .leftpad {
-    margin: 0;
-    padding-left: 0;
-  }
-
-  .iconImage {
-    width: 5em;
-    margin-bottom: 0.3em;
-  }
-
-  .paragraph {
-    text-align: justify;
-    padding: 0;
-  }
-
-  .sectionTitle {
-    margin: 0;
-    padding-left: 0;
-    color: #53a2be;
-  }
-
-  .appstoreButton {
+.appstoreButton {
     height: 3em;
     width: auto;
-    margin-left: 0.2em;
-  }
+    margin-left: 1em;
+}
+
+.explanationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.featureSection {
+    margin: 2em;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot {
+    width: 20em;
+    height: auto;
+}
+
+.dscreenshot {
+    width: 25em;
+    height: auto;
+}
+
+.videoWrapper {
+    position: relative;
+    margin: 2em;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.paragraph {
+    text-align: justify;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.linkDiv {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkDiv a {
+    width: 100%;
+    background-color: #1a242f;
+    color: #dbdbdb;
+    text-align: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 0.5em;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+@media (prefers-color-scheme: light) {
+    .linkDiv a {
+        background-color: #f7f7f7;
+        color: #363636;
+    }
+}
+
+.bulletImage {
+    width: 25px;
+    height: 25px;
+    background-color: #1a242f;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+@media (max-width: 700px) {
+    .featureSection {
+        margin: 2em;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .topdiv {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+    .titleH1 {
+        margin: 0;
+        padding: 0;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .titleH2 {
+        margin: 0;
+        padding: 0;
+        color: #d3d3d3;
+        text-align: center;
+    }
+    .leftpad {
+        margin: 0;
+        padding-left: 0;
+    }
+    .iconImage {
+        width: 5em;
+        margin-bottom: 0.3em;
+    }
+    .paragraph {
+        text-align: justify;
+        padding: 0;
+    }
+    .sectionTitle {
+        margin: 0;
+        padding-left: 0;
+        color: #53a2be;
+    }
+    .appstoreButton {
+        height: 3em;
+        width: auto;
+        margin-left: 0.2em;
+    }
 }
