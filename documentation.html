@@ -1,244 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Jellycuts</title>
     <link rel="icon" href="assets/Icon.png" />
-    <meta
-      name="description"
-      content="Jellycuts is the best way to create supercharged iOS shortcuts."
-    />
+    <meta name="description" content="Jellycuts is the best way to create supercharged iOS shortcuts." />
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1 style="color:#BE9C8B;">Jellycut's Documentation</h1>
     <div class="linkDiv">
-      <a href="/Documentation/introduction.html">Introduction</a>
-      <a href="/Documentation/libraries.html">Importing Libraries</a>
-      <a href="/Documentation/variables.html">Variables</a>
-      <a href="/Documentation/multi_line_string.html">Multi-line String</a>
-      <a href="/Documentation/shortcut_color.html">Shortcut Color</a>
-      <a href="/Documentation/shortcut_icon.html">Shortcut Icon</a>
-      <a href="/Documentation/shortcut_input.html">Shortcut Input</a>
-      <a href="/Documentation/ask_each_time.html">Ask Each Time</a>
-      <a href="/Documentation/clipboard.html">Clipboard</a>
-      <a href="/Documentation/repeat.html">Repeat</a>
-      <a href="/Documentation/repeat_each.html">Repeat Each</a>
-      <a href="/Documentation/menu.html">Menu</a>
-      <a href="/Documentation/get_property.html">Get Property</a>
-      <a href="/Documentation/keys.html">Get Key</a>
-      <a href="/Documentation/type_casting.html">Type Casting</a>
-      <a href="/Documentation/filters.html">Filter</a>
-      <a href="/Documentation/if_statement.html">If Statement</a>
-      <a href="/Documentation/else_statement.html">Else Statement</a>
-      <a href="/Documentation/addToReadingList.html">Add to Reading List</a>
-      <a href="/Documentation/airdrop.html">Airdrop</a>
-      <a href="/Documentation/appendFile.html">Append File</a>
-      <a href="/Documentation/appendNote.html">Append Note</a>
-      <a href="/Documentation/askForInput.html">Ask for Input</a>
-      <a href="/Documentation/batteryLevel.html">Battery Level</a>
-      <a href="/Documentation/calculate.html">Calculate Expression</a>
-      <a href="/Documentation/statistic.html">Calculate Statistic</a>
-      <a href="/Documentation/changeCase.html">Change Text Case</a>
-      <a href="/Documentation/changeWallpaper.html">Change Wallpaper</a>
-      <a href="/Documentation/choose.html">Choose From List</a>
-      <a href="/Documentation/clearUpNext.html">Clear Up Next</a>
-      <a href="/Documentation/combineImage.html">Combine Image</a>
-      <a href="/Documentation/combineText.html">Combine Text</a>
-      <a href="/Documentation/convertImage.html">Convert Image</a>
-      <a href="/Documentation/correctSpelling.html">Correct Spelling</a>
-      <a href="/Documentation/count.html">Count</a>
-      <a href="/Documentation/createFolder.html">Create Folder</a>
-      <a href="/Documentation/makeGIF.html">Create GIF</a>
-      <a href="/Documentation/createNote.html">Create Note</a>
-      <a href="/Documentation/createPDF.html">Create PDF</a>
-      <a href="/Documentation/createQR.html">Create QR Code</a>
-      <a href="/Documentation/cropImage.html">Crop Image</a>
-      <a href="/Documentation/date.html">Date</a>
-      <a href="/Documentation/debugShortcut.html">Debug Content Attribution</a>
-      <a href="/Documentation/decode.html">Decode Base64</a>
-      <a href="/Documentation/decodeURL.html">Decode URL</a>
-      <a href="/Documentation/deleteFile.html">Delete File</a>
-      <a href="/Documentation/deletePhotos.html">Delete Photos</a>
-      <a href="/Documentation/detectLanguage.html">Detect Language</a>
-      <a href="/Documentation/dictateText.html">Dictate Text</a>
-      <a href="/Documentation/dictionary.html">Dictionary</a>
-      <a href="/Documentation/emojiName.html">Emoji Name</a>
-      <a href="/Documentation/encodeAudio.html">Encode Audio</a>
-      <a href="/Documentation/encode.html">Encode Base64</a>
-      <a href="/Documentation/encodeMedia.html">Encode Media</a>
-      <a href="/Documentation/encodeURL.html">Encode URL</a>
-      <a href="/Documentation/exit.html">Exit Shortcut</a>
-      <a href="/Documentation/expandURL.html">Expand URL</a>
-      <a href="/Documentation/extractArchive.html">Extract Archive</a>
-      <a href="/Documentation/filterArticles.html">Filter Articles</a>
-      <a href="/Documentation/filterAttendees.html">Filter Attendees</a>
-      <a href="/Documentation/filterCalendar.html">Filter Calendar Events</a>
-      <a href="/Documentation/filterContacts.html">Filter Contacts</a>
-      <a href="/Documentation/filterFiles.html">Filter File</a>
-      <a href="/Documentation/filterImages.html">Filter Images</a>
-      <a href="/Documentation/filterLocations.html">Filter Locations</a>
-      <a href="/Documentation/filterMusic.html">Filter Music</a>
-      <a href="/Documentation/filterNotes.html">Filter Notes</a>
-      <a href="/Documentation/filterPhotos.html">Filter Photos</a>
-      <a href="/Documentation/filterReminders.html">Filter Reminders</a>
-      <a href="/Documentation/flipImage.html">Flip Image</a>
-      <a href="/Documentation/formatDate.html">Format Date</a>
-      <a href="/Documentation/formatNumber.html">Format Number</a>
-      <a href="/Documentation/formatSize.html">Format Size</a>
-      <a href="/Documentation/getAddressFrom.html">Get Address From Input</a>
-      <a href="/Documentation/keysFrom.html">Get All Keys from Dictionary</a>
-      <a href="/Documentation/valuesFrom.html">Get All Values from Dictionary</a>
-      <a href="/Documentation/appDetail.html">Get App Detail</a>
-      <a href="/Documentation/appearanceDetail.html">Get Appearance Detail</a>
-      <a href="/Documentation/articleDetail.html">Get Article Detail</a>
-      <a href="/Documentation/attendeeDetail.html">Get Attendee Detail</a>
-      <a href="/Documentation/cellularDetails.html">Get Cellular Details</a>
-      <a href="/Documentation/getClipboard.html">Get Clipboard</a>
-      <a href="/Documentation/conditionDetail.html">Get Condition Details</a>
-      <a href="/Documentation/contactDetail.html">Get Contact Detail</a>
-      <a href="/Documentation/getContactsFrom.html">Get Contacts From Input</a>
-      <a href="/Documentation/urlHeaders.html">Get Contents of URL</a>
-      <a href="/Documentation/getCurrentConditions.html">Get Current Conditions</a>
-      <a href="/Documentation/getDateFrom.html">Get Date From Input</a>
-      <a href="/Documentation/deviceDetails.html">Get Device Details</a>
-      <a href="/Documentation/getEmailFrom.html">Get Email From Input</a>
-      <a href="/Documentation/eventDetail.html">Get Event Detail</a>
-      <a href="/Documentation/getFile.html">Get File</a>
-      <a href="/Documentation/fileDetail.html">Get File Details</a>
-      <a href="/Documentation/getFileLink.html">Get File Link</a>
-      <a href="/Documentation/getForecast.html">Get Forecast</a>
-      <a href="/Documentation/sampleDetail.html">Get Health Sample Detail</a>
-      <a href="/Documentation/getIPAddress.html">Get IP Address</a>
-      <a href="/Documentation/imageDetail.html">Get Image Detail</a>
-      <a href="/Documentation/getImagesFrom.html">Get Images From Input</a>
-      <a href="/Documentation/getItemFromList.html">Get Item From List</a>
-      <a href="/Documentation/locationDetail.html">Get Location Detail</a>
-      <a href="/Documentation/getMatchGroup.html">Get Match Group</a>
-      <a href="/Documentation/musicDetail.html">Get Music Detail</a>
-      <a href="/Documentation/getName.html">Get Name</a>
-      <a href="/Documentation/noteDetail.html">Get Note Details</a>
-      <a href="/Documentation/getNumbersFrom.html">Get Numbers From Input</a>
-      <a href="/Documentation/pageDetail.html">Get Page Detail</a>
-      <a href="/Documentation/getNumbersFrom.html">Get Phone Numbers From Input</a>
-      <a href="/Documentation/podcastEpisodeDetail.html">Get Podcast Episode Detail</a>
-      <a href="/Documentation/podcastDetail.html">Get Podcast Show Detail</a>
-      <a href="/Documentation/productDetail.html">Get Product Detail</a>
-      <a href="/Documentation/getPageRSS.html">Get RSS From Page</a>
-      <a href="/Documentation/getRSSItems.html">Get RSS Items From Feed</a>
-      <a href="/Documentation/reminderDetail.html">Get Reminder Detail</a>
-      <a href="/Documentation/shazamDetail.html">Get Shazam Detail</a>
-      <a href="/Documentation/shortcutDetail.html">Get Shortcut Details</a>
-      <a href="/Documentation/getShortcuts.html">Get Shortcuts</a>
-      <a href="/Documentation/stockDetail.html">Get Stock Detail</a>
-      <a href="/Documentation/getTextFrom.html">Get Text From Input</a>
-      <a href="/Documentation/getType.html">Get Type</a>
-      <a href="/Documentation/urlComponent.html">Get URL Component</a>
-      <a href="/Documentation/getHeaders.html">Get URL Headers</a>
-      <a href="/Documentation/getURLSFromInput.html">Get URLS From Input</a>
-      <a href="/Documentation/valueFor.html">Get Value For Key</a>
-      <a href="/Documentation/wifiDetails.html">Get Wi-Fi Details</a>
-      <a href="/Documentation/artistDetail.html">Get iTunes Artist Detail</a>
-      <a href="/Documentation/handoffPlayback.html">Handoff Playback</a>
-      <a href="/Documentation/importShortcut.html">Import Shortcut</a>
-      <a href="/Documentation/makeArchive.html">Make Archive</a>
-      <a href="/Documentation/htmlFromRichText.html">Make HTML From Rich Text</a>
-      <a href="/Documentation/markdownFromRich.html">Make Markdown From Rich Text</a>
-      <a href="/Documentation/richTextFromHTML.html">Make Rich Text From HTML</a>
-      <a href="/Documentation/richTextFromMarkdown.html">Make Rich Text From Markdown</a>
-      <a href="/Documentation/videoFromGif.html">Make Video from GIF</a>
-      <a href="/Documentation/markup.html">Markup</a>
-      <a href="/Documentation/maskImage.html">Mask Image</a>
-      <a href="/Documentation/matchText.html">Match Text</a>
-      <a href="/Documentation/nothing.html">Nothing</a>
-      <a href="/Documentation/number.html">Number</a>
-      <a href="/Documentation/openApp.html">Open App</a>
-      <a href="/Documentation/openIn.html">Open In</a>
-      <a href="/Documentation/openShortcut.html">Open Shortcut</a>
-      <a href="/Documentation/openURL.html">Open URL</a>
-      <a href="/Documentation/overlayImage.html">Overlay Image</a>
-      <a href="/Documentation/pauseMusic.html">Play Music</a>
-      <a href="/Documentation/playPodcast.html">Play Podcast</a>
-      <a href="/Documentation/prependFile.html">Prepend File</a>
-      <a href="/Documentation/print.html">Print</a>
-      <a href="/Documentation/quicklook.html">Quicklook</a>
-      <a href="/Documentation/randomNumber.html">Random Number</a>
-      <a href="/Documentation/removeEvents.html">Remove Events</a>
-      <a href="/Documentation/removeFromAlbum.html">Remove From Album</a>
-      <a href="/Documentation/removeReminders.html">Remove Reminders</a>
-      <a href="/Documentation/replaceText.html">Replace Text</a>
-      <a href="/Documentation/resizeImage.html">Resize Image</a>
-      <a href="/Documentation/rotateImage.html">Rotate Image</a>
-      <a href="/Documentation/round.html">Round Number</a>
-      <a href="/Documentation/runJavascriptOnWebpage.html">Run Javascript on Webpage</a>
-      <a href="/Documentation/runShortcut.html">Run Shortcut</a>
-      <a href="/Documentation/saveFile.html">Save File</a>
-      <a href="/Documentation/saveToCameraRoll.html">Save to Camera Roll</a>
-      <a href="/Documentation/scanQR.html">Scan QR Code</a>
-      <a href="/Documentation/searchWeb.html">Search Web</a>
-      <a href="/Documentation/seek.html">Seek Media</a>
-      <a href="/Documentation/selectContact.html">Select Contact</a>
-      <a href="/Documentation/selectedEmail.html">Select Email</a>
-      <a href="/Documentation/selectPhoto.html">Select Photo</a>
-      <a href="/Documentation/selectSong.html">Select Song From Apple Music</a>
-      <a href="/Documentation/alert.html">Send Alert</a>
-      <a href="/Documentation/sendNotification.html">Send Notification</a>
-      <a href="/Documentation/setAirplaneMode.html">Set Airplane Mode</a>
-      <a href="/Documentation/setBluetooth.html">Set Bluetooth</a>
-      <a href="/Documentation/setBrightness.html">Set Brightness</a>
-      <a href="/Documentation/setCellular.html">Set Cellular</a>
-      <a href="/Documentation/setClipboard.html">Set Clipboard</a>
-      <a href="/Documentation/setAppearance.html">Set Device Appearance</a>
-      <a href="/Documentation/setValue.html">Set Dictionary Value</a>
-      <a href="/Documentation/setDND.html">Set Do Not Disturb</a>
-      <a href="/Documentation/setFlashlight.html">Set Flashlight</a>
-      <a href="/Documentation/lowPowerMode.html">Set Low Power Mode</a>
-      <a href="/Documentation/setMediaDestination.html">Set Media Destination</a>
-      <a href="/Documentation/setName.html">Set Name</a>
-      <a href="/Documentation/setVolume.html">Set Volume</a>
-      <a href="/Documentation/setWiFi.html">Set WiFi</a>
-      <a href="/Documentation/share.html">Share</a>
-      <a href="/Documentation/shareEXT.html">Share With Extensions</a>
-      <a href="/Documentation/shazamIt.html">Shazam It</a>
-      <a href="/Documentation/showDefinition.html">Show Definition</a>
-      <a href="/Documentation/showNote.html">Show Note</a>
-      <a href="/Documentation/showReminderList.html">Show Reminders List</a>
-      <a href="/Documentation/showResult.html">Show Result</a>
-      <a href="/Documentation/showWebPage.html">Show Webpage</a>
-      <a href="/Documentation/showInCalendar.html">Show in Calendar</a>
-      <a href="/Documentation/showInStore.html">Show in Store</a>
-      <a href="/Documentation/siriDonation.html">Siri Donation</a>
-      <a href="/Documentation/skipBack.html">Skip Backward</a>
-      <a href="/Documentation/skipForward.html">Skip Forward</a>
-      <a href="/Documentation/speakText.html">Speak Text</a>
-      <a href="/Documentation/splitText.html">Split Text</a>
-      <a href="/Documentation/startWorkout.html">Start Workout</a>
-      <a href="/Documentation/stockQuote.html">Stock Quote</a>
-      <a href="/Documentation/subscribeToPodcast.html">Subscribe to Podcast</a>
-      <a href="/Documentation/takePhoto.html">Take Photo</a>
-      <a href="/Documentation/takeVideo.html">Take Video</a>
-      <a href="/Documentation/text.html">Text</a>
-      <a href="/Documentation/translateText.html">Translate Text</a>
-      <a href="/Documentation/trimVideo.html">Trim Video</a>
-      <a href="/Documentation/url.html">URL</a>
-      <a href="/Documentation/userActivity.html">User Activity</a>
-      <a href="/Documentation/vibrate.html">Vibrate Device</a>
-      <a href="/Documentation/contentGraph.html">View Content Graph</a>
-      <a href="/Documentation/wait.html">Wait</a>
-      <a href="/Documentation/waitToReturn.html">Wait to return</a>
-      <a href="/Documentation/urlContents.html">Webpage Contents</a>
+        <a href="/Documentation/introduction.html">Introduction</a>
+
+        <h2 style="color:#BE9C8B;">Meta Actions</h2>
+
+        <a href="/Documentation/VariablesInJelly.md.html">Variables</a>
+
+        <a href="/Documentation/MagicVariablesInJelly.md.html">Magic Variables</a>
+
+        <a href="/Documentation/DoStuff!.md.html">Functions</a>
+
+        <a href="/Documentation/libraries.md.html">Importing Libraries</a>
+
+        <a href="/Documentation/string.md.html">String</a>
+
+        <a href="/Documentation/multi_line_string.md.html">Multi-line String</a>
+
+        <a href="/Documentation/shortcut_color.html">Shortcut Color</a>
+
+        <a href="/Documentation/shortcut_input.html">Shortcut Input</a>
+
+        <a href="/Documentation/ask_each_time.md.html">Ask Each Time</a>
+
+        <a href="/Documentation/clipboard.md.html">Clipboard</a>
+
+        <a href="/Documentation/repeat.md.html">Repeat</a>
+
+        <a href="/Documentation/repeat_each.md.html">Repeat Each</a>
+
+        <a href="/Documentation/menu.md.html">Menu</a>
+
+        <a href="/Documentation/get_property.md.html">Get Property</a>
+
+        <a href="/Documentation/keys.md.html">Get Key</a>
+
+        <a href="/Documentation/type_casting.md.html">Type Casting</a>
+
+        <a href="/Documentation/if_statement.md.html">If Statement</a>
+
+        <a href="/Documentation/else_statement.md.html">Else Statement</a>
+
+        <h2 style="color:#BE9C8B;">Shortcuts Actions</h2>
+        <a href="/Documentation/addFrameToGIF.md.html">Add Frame To GIF</a>
+
+        <a href="/Documentation/addUpNext.md.html">Add Music Up Next</a>
+
+        <a href="/Documentation/addToPlaylist.md.html">Add to Playlist</a>
+
+        <a href="/Documentation/addToReadingList.md.html">Add to Reading List</a>
+
+        <a href="/Documentation/adjustDate.md.html">Adjust Date</a>
+
+        <a href="/Documentation/airdrop.md.html">Airdrop</a>
+
+        <a href="/Documentation/appendFile.md.html">Append File</a>
+
+        <a href="/Documentation/appendNote.md.html">Append Note</a>
+
+        <a href="/Documentation/askForInput.md.html">Ask for Input</a>
+
+        <a href="/Documentation/batteryLevel.md.html">Battery Level</a>
+
+        <a href="/Documentation/calculate.md.html">Calculate Expression</a>
+
+        <a href="/Documentation/statistic.md.html">Calculate Statistic</a>
+
+        <a href="/Documentation/call.md.html">Call</a>
+
+        <a href="/Documentation/changeCase.md.html">Change Text Case</a>
+
+        <a href="/Documentation/changeWallpaper.md.html">Change Wallpaper</a>
+
+        <a href="/Documentation/choose.md.html">Choose From List</a>
+
+        <a href="/Documentation/clearUpNext.md.html">Clear Up Next</a>
+
+        <a href="/Documentation/combineImage.md.html">Combine Image</a>
+
+        <a href="/Documentation/combineText.md.html">Combine Text</a>
+
+        <a href="/Documentation/continueInShortcuts.md.html">Continue In Shortcuts</a>
+
+        <a href="/Documentation/convertImage.md.html">Convert Image</a>
+
+        <a href="/Documentation/correctSpelling.md.html">Correct Spelling</a>
+
+        <a href="/Documentation/count.md.html">Count</a>
+
+        <a href="/Documentation/createFolder.md.html">Create Folder</a>
+
+        <a href="/Documentation/makeGIF.md.html">Create GIF</a>
+
+        <a href="/Documentation/createNote.md.html">Create Note</a>
+
+        <a href="/Documentation/createPDF.md.html">Create PDF</a>
+
+        <a href="/Documentation/createPlaylist.md.html">Create Playlist</a>
+
+        <a href="/Documentation/createQR.md.html">Create QR Code</a>
+
+        <a href="/Documentation/cropImage.md.html">Crop Image</a>
+
+        <a href="/Documentation/date.md.html">Date</a>
+
+        <a href="/Documentation/debugShortcut.md.html">Debug Content Attribution</a>
+
+        <a href="/Documentation/decode.md.html">Decode Base64</a>
+
+        <a href="/Documentation/decodeURL.md.html">Decode URL</a>
+
+        <a href="/Documentation/deleteFile.md.html">Delete File</a>
+
+        <a href="/Documentation/deletePhotos.md.html">Delete Photos</a>
+
+        <a href="/Documentation/detectLanguage.md.html">Detect Language</a>
+
+        <a href="/Documentation/dictateText.md.html">Dictate Text</a>
+
+        <a href="/Documentation/dictionary.md.html">Dictionary</a>
+
+        <a href="/Documentation/emojiName.md.html">Emoji Name</a>
+
+        <a href="/Documentation/encodeAudio.md.html">Encode Audio</a>
+
+        <a href="/Documentation/encode.md.html">Encode Base64</a>
+
+        <a href="/Documentation/encodeMedia.md.html">Encode Media</a>
+
+        <a href="/Documentation/encodeURL.md.html">Encode URL</a>
+
+        <a href="/Documentation/exit.md.html">Exit Shortcut</a>
+
+        <a href="/Documentation/expandURL.md.html">Expand URL</a>
+
+        <a href="/Documentation/extractArchive.md.html">Extract Archive</a>
+
+        <a href="/Documentation/facetime.md.html">Facetime</a>
+
+        <a href="/Documentation/filterArticles.md.html">Filter Articles</a>
+
+        <a href="/Documentation/filterAttendees.md.html">Filter Attendees</a>
+
+        <a href="/Documentation/filterCalendar.md.html">Filter Calendar Events</a>
+
+        <a href="/Documentation/filterContacts.md.html">Filter Contacts</a>
+
+        <a href="/Documentation/filterFiles.md.html">Filter File</a>
+
+        <a href="/Documentation/filterImages.md.html">Filter Images</a>
+
+        <a href="/Documentation/filterLocations.md.html">Filter Locations</a>
+
+        <a href="/Documentation/filterMusic.md.html">Filter Music</a>
+
+        <a href="/Documentation/filterNotes.md.html">Filter Notes</a>
+
+        <a href="/Documentation/filterPhotos.md.html">Filter Photos</a>
+
+        <a href="/Documentation/filterReminders.md.html">Filter Reminders</a>
+
+        <a href="/Documentation/flipImage.md.html">Flip Image</a>
+
+        <a href="/Documentation/formatDate.md.html">Format Date</a>
+
+        <a href="/Documentation/formatNumber.md.html">Format Number</a>
+
+        <a href="/Documentation/formatSize.md.html">Format Size</a>
+
+        <a href="/Documentation/getAddressFrom.md.html">Get Address From Input</a>
+
+        <a href="/Documentation/getallalarms.md.html">Get All Alarms</a>
+
+        <a href="/Documentation/keysFrom.md.html">Get All Keys from Dictionary</a>
+
+        <a href="/Documentation/valuesFrom.md.html">Get All Values from Dictionary</a>
+
+        <a href="/Documentation/appDetail.md.html">Get App Detail</a>
+
+        <a href="/Documentation/appearanceDetail.md.html">Get Appearance Detail</a>
+
+        <a href="/Documentation/getArticle.md.html">Get Article</a>
+
+        <a href="/Documentation/articleDetail.md.html">Get Article Detail</a>
+
+        <a href="/Documentation/attendeeDetail.md.html">Get Attendee Detail</a>
+
+        <a href="/Documentation/cellularDetails.md.html">Get Cellular Details</a>
+
+        <a href="/Documentation/getClipboard.md.html">Get Clipboard</a>
+
+        <a href="/Documentation/conditionDetail.md.html">Get Condition Details</a>
+
+        <a href="/Documentation/contactDetail.md.html">Get Contact Detail</a>
+
+        <a href="/Documentation/getContactsFrom.md.html">Get Contacts From Input</a>
+
+        <a href="/Documentation/downloadURL.md.html">Get Contents of URL</a>
+
+        <a href="/Documentation/getCurrentConditions.md.html">Get Current Conditions</a>
+
+        <a href="/Documentation/getCurrentSong.md.html">Get Current Song</a>
+
+        <a href="/Documentation/getDateFrom.md.html">Get Date From Input</a>
+
+        <a href="/Documentation/deviceDetails.md.html">Get Device Details</a>
+
+        <a href="/Documentation/getEmailFrom.md.html">Get Email From Input</a>
+
+        <a href="/Documentation/eventDetail.md.html">Get Event Detail</a>
+
+        <a href="/Documentation/getFile.md.html">Get File</a>
+
+        <a href="/Documentation/fileDetail.md.html">Get File Details</a>
+
+        <a href="/Documentation/getFileLink.md.html">Get File Link</a>
+
+        <a href="/Documentation/getForecast.md.html">Get Forecast</a>
+
+        <a href="/Documentation/getFrames.md.html">Get Frames</a>
+
+        <a href="/Documentation/sampleDetail.md.html">Get Health Sample Detail</a>
+
+        <a href="/Documentation/getIP.md.html">Get IP Address</a>
+
+        <a href="/Documentation/imageDetail.md.html">Get Image Detail</a>
+
+        <a href="/Documentation/getImagesFrom.md.html">Get Images From Input</a>
+
+        <a href="/Documentation/getItemFromList.md.html">Get Item From List</a>
+
+        <a href="/Documentation/getLastBurst.md.html">Get Last Bursts</a>
+
+        <a href="/Documentation/getLastLivePhoto.md.html">Get Last Live Photos</a>
+
+        <a href="/Documentation/getLastPhoto.md.html">Get Last Photo</a>
+
+        <a href="/Documentation/getLastImport.md.html">Get Last Photo Import</a>
+
+        <a href="/Documentation/getLastScreenshot.md.html">Get Last Screenshots</a>
+
+        <a href="/Documentation/getLastVideo.md.html">Get Last Video</a>
+
+        <a href="/Documentation/locationDetail.md.html">Get Location Detail</a>
+
+        <a href="/Documentation/getMatchGroup.md.html">Get Match Group</a> Í
+
+        <a href="/Documentation/musicDetail.md.html">Get Music Detail</a>
+
+        <a href="/Documentation/getName.md.html">Get Name</a>
+
+        <a href="/Documentation/noteDetail.md.html">Get Note Details</a>
+
+        <a href="/Documentation/getNumbersFrom.md.html">Get Numbers From Input</a>
+
+        <a href="/Documentation/getClass.md.html">Get Object of Class</a>
+
+        <a href="/Documentation/pageDetail.md.html">Get Page Detail</a>
+
+        <a href="/Documentation/getPhonesFrom.md.html">Get Phone Numbers From Input</a>
+
+        <a href="/Documentation/getPlaylist.md.html">Get Playlist</a>
+
+        <a href="/Documentation/podcastEpisodeDetail.md.html">Get Podcast Episode Detail</a>
+
+        <a href="/Documentation/getPodcastEpisodes.md.html">Get Podcast Episodes</a>
+
+        <a href="/Documentation/podcastDetail.md.html">Get Podcast Show Detail</a>
+
+        <a href="/Documentation/getPodcasts.md.html">Get Podcasts</a>
+
+        <a href="/Documentation/productDetail.md.html">Get Product Detail</a>
+
+        <a href="/Documentation/getPageRSS.md.html">Get RSS From Page</a>
+
+        <a href="/Documentation/getRSSItems.md.html">Get RSS Items From Feed</a>
+
+        <a href="/Documentation/reminderDetail.md.html">Get Reminder Detail</a>
+
+        <a href="/Documentation/shazamDetail.md.html">Get Shazam Detail</a>
+
+        <a href="/Documentation/shortcutDetail.md.html">Get Shortcut Details</a>
+
+        <a href="/Documentation/getShortcuts.md.html">Get Shortcuts</a>
+
+        <a href="/Documentation/stockDetail.md.html">Get Stock Detail</a>
+
+        <a href="/Documentation/getTextFrom.md.html">Get Text From Input</a>
+
+        <a href="/Documentation/getTimeBetween.md.html">Get Time Between Dates</a>
+
+        <a href="/Documentation/getType.md.html">Get Type</a>
+
+        <a href="/Documentation/urlComponent.md.html">Get URL Component</a>
+
+        <a href="/Documentation/getHeaders.md.html">Get URL Headers</a>
+
+        <a href="/Documentation/getURLSFromInput.md.html">Get URLS From Input</a>
+
+        <a href="/Documentation/getUpcomingReminders.md.html">Get Upcoming Reminders</a>
+
+        <a href="/Documentation/valueFor.md.html">Get Value For Key</a>
+
+        <a href="/Documentation/wifiDetails.md.html">Get Wi-Fi Details</a>
+
+        <a href="/Documentation/artistDetail.md.html">Get iTunes Artist Detail</a>
+
+        <a href="/Documentation/grabJellycut.md.html">Grab Jellycut</a>
+
+        <a href="/Documentation/handoffPlayback.md.html">Handoff Playback</a>
+
+        <a href="/Documentation/hash.md.html">Hash</a>
+
+        <a href="/Documentation/importShortcut.md.html">Import Shortcut</a>
+
+        <a href="/Documentation/list.md.html">List</a>
+
+        <a href="/Documentation/logWorkout.md.html">Log Workout</a>
+
+        <a href="/Documentation/makeArchive.md.html">Make Archive</a>
+
+        <a href="/Documentation/htmlFromRichText.md.html">Make HTML From Rich Text</a>
+
+        <a href="/Documentation/markdownFromRich.md.html">Make Markdown From Rich Text</a>
+
+        <a href="/Documentation/richTextFromHTML.md.html">Make Rich Text From HTML</a>
+
+        <a href="/Documentation/richTextFromMarkdown.md.html">Make Rich Text From Markdown</a>
+
+        <a href="/Documentation/videoFromGif.md.html">Make Video from GIF</a>
+
+        <a href="/Documentation/markup.md.html">Markup</a>
+
+        <a href="/Documentation/maskImage.md.html">Mask Image</a>
+
+        <a href="/Documentation/matchText.md.html">Match Text</a>
+
+        <a href="/Documentation/math.md.html">Math</a>
+
+        <a href="/Documentation/nothing.md.html">Nothing</a>
+
+        <a href="/Documentation/number.md.html">Number</a>
+
+        <a href="/Documentation/openApp.md.html">Open App</a>
+
+        <a href="/Documentation/openIn.md.html">Open In</a>
+
+        <a href="/Documentation/openShortcut.md.html">Open Shortcut</a>
+
+        <a href="/Documentation/openURL.md.html">Open URL</a>
+
+        <a href="/Documentation/xCallbackURL.md.html">Open X-Callback URL</a>
+
+        <a href="/Documentation/overlayImage.md.html">Overlay Image</a>
+
+        <a href="/Documentation/play.md.html">Play Music</a>
+
+        <a href="/Documentation/playMusic.md.html">Play Music</a>
+
+        <a href="/Documentation/playPodcast.md.html">Play Podcast</a>
+
+        <a href="/Documentation/playSound.md.html">Play Sound</a>
+
+        <a href="/Documentation/prependFile.md.html">Prepend File</a>
+
+        <a href="/Documentation/print.md.html">Print</a>
+
+        <a href="/Documentation/quicklook.md.html">Quicklook</a>
+
+        <a href="/Documentation/randomNumber.md.html">Random Number</a>
+
+        <a href="/Documentation/recordAudio.md.html">Record Audio</a>
+
+        <a href="/Documentation/removeEvents.md.html">Remove Events</a>
+
+        <a href="/Documentation/removeFromAlbum.md.html">Remove From Album</a>
+
+        <a href="/Documentation/removeReminders.md.html">Remove Reminders</a>
+
+        <a href="/Documentation/replaceText.md.html">Replace Text</a>
+
+        <a href="/Documentation/resizeImage.md.html">Resize Image</a>
+
+        <a href="/Documentation/rotateImage.md.html">Rotate Image</a>
+
+        <a href="/Documentation/round.md.html">Round Number</a>
+
+        <a href="/Documentation/runJavascriptOnWebpage.md.html">Run Javascript on Webpage</a>
+
+        <a href="/Documentation/runSSH.md.html">Run Script Over SSH</a>
+
+        <a href="/Documentation/runShortcut.md.html">Run Shortcut</a>
+
+        <a href="/Documentation/saveFile.md.html">Save File</a>
+
+        <a href="/Documentation/saveToCameraRoll.md.html">Save to Camera Roll</a>
+
+        <a href="/Documentation/scanQR.md.html">Scan QR Code</a>
+
+        <a href="/Documentation/searchAppStore.md.html">Search App Store</a>
+
+        <a href="/Documentation/searchPddcasts.md.html">Search Podcasts</a>
+
+        <a href="/Documentation/searchWeb.md.html">Search Web</a>
+
+        <a href="/Documentation/searchItunes.md.html">Search iTunes</a>
+
+        <a href="/Documentation/seek.md.html">Seek Media</a>
+
+        <a href="/Documentation/selectContact.md.html">Select Contact</a>
+
+        <a href="/Documentation/selectedEmail.md.html">Select Email</a>
+
+        <a href="/Documentation/selectPhone.md.html">Select Phone Number</a>
+
+        <a href="/Documentation/selectPhoto.md.html">Select Photo</a>
+
+        <a href="/Documentation/selectSong.md.html">Select Song From Apple Music</a>
+
+        <a href="/Documentation/alert.md.html">Send Alert</a>
+
+        <a href="/Documentation/sendMessage.md.html">Send Message</a>
+
+        <a href="/Documentation/sendNotification.md.html">Send Notification</a>
+
+        <a href="/Documentation/setAirplaneMode.md.html">Set Airplane Mode</a>
+
+        <a href="/Documentation/setBluetooth.md.html">Set Bluetooth</a>
+
+        <a href="/Documentation/setBrightness.md.html">Set Brightness</a>
+
+        <a href="/Documentation/setCellular.md.html">Set Cellular</a>
+
+        <a href="/Documentation/setClipboard.md.html">Set Clipboard</a>
+
+        <a href="/Documentation/setAppearance.md.html">Set Device Appearance</a>
+
+        <a href="/Documentation/setValue.md.html">Set Dictionary Value</a>
+
+        <a href="/Documentation/setDND.md.html">Set Do Not Disturb</a>
+
+        <a href="/Documentation/setFlashlight.md.html">Set Flashlight</a>
+
+        <a href="/Documentation/lowPowerMode.md.html">Set Low Power Mode</a>
+
+        <a href="/Documentation/setMediaDestination.md.html">Set Media Destination</a>
+
+        <a href="/Documentation/setName.md.html">Set Name</a>
+
+        <a href="/Documentation/setOrientationLock.md.html">Set Orientation Lock</a>
+
+        <a href="/Documentation/setVoiceData.md.html">Set Voice Data</a>
+
+        <a href="/Documentation/setVolume.md.html">Set Volume</a>
+
+        <a href="/Documentation/setWiFi.md.html">Set WiFi</a>
+
+        <a href="/Documentation/share.md.html">Share</a>
+
+        <a href="/Documentation/shareEXT.md.html">Share With Extensions</a>
+
+        <a href="/Documentation/shazamIt.md.html">Shazam It</a>
+
+        <a href="/Documentation/showDefinition.md.html">Show Definition</a>
+
+        <a href="/Documentation/showNote.md.html">Show Note</a>
+
+        <a href="/Documentation/showReminderList.md.html">Show Reminders List</a>
+
+        <a href="/Documentation/showResult.md.html">Show Result</a>
+
+        <a href="/Documentation/showWebPage.md.html">Show Webpage</a>
+
+        <a href="/Documentation/showInCalendar.md.html">Show in Calendar</a>
+
+        <a href="/Documentation/showInStore.md.html">Show in Store</a>
+
+        <a href="/Documentation/siriDonation.md.html">Siri Donation</a>
+
+        <a href="/Documentation/skipBack.md.html">Skip Backward</a>
+
+        <a href="/Documentation/skipForward.md.html">Skip Forward</a>
+
+        <a href="/Documentation/speakText.md.html">Speak Text</a>
+
+        <a href="/Documentation/splitText.md.html">Split Text</a>
+
+        <a href="/Documentation/timer.md.html">Start Timer</a>
+
+        <a href="/Documentation/startWorkout.md.html">Start Workout</a>
+
+        <a href="/Documentation/stockQuote.md.html">Stock Quote</a>
+
+        <a href="/Documentation/subscribeToPodcast.md.html">Subscribe to Podcast</a>
+
+        <a href="/Documentation/takePhoto.md.html">Take Photo</a>
+
+        <a href="/Documentation/takeVideo.md.html">Take Video</a>
+
+        <a href="/Documentation/takeScreenshot.md.html">Take a Screenshot</a>
+
+        <a href="/Documentation/text.md.html">Text</a>
+
+        <a href="/Documentation/toggleAirplaneMode.md.html">Toggle Airplane Mode</a>
+
+        <a href="/Documentation/toggleAppearance.md.html">Toggle Device Appearance</a>
+
+        <a href="/Documentation/toggleFlashlight.md.html">Toggle Flashlight</a>
+
+        <a href="/Documentation/toggleLowPowerMode.md.html">Toggle Low Power Mode</a>
+
+        <a href="/Documentation/toggleOrientationLock.md.html">Toggle Orientation Lock</a>
+
+        <a href="/Documentation/translateText.md.html">Translate Text</a>
+
+        <a href="/Documentation/trimVideo.md.html">Trim Video</a>
+
+        <a href="/Documentation/url.md.html">URL</a>
+
+        <a href="/Documentation/uploadPhotos.md.html">Upload Photos To Shared Album</a>
+
+        <a href="/Documentation/userActivity.md.html">User Activity</a>
+
+        <a href="/Documentation/vibrate.md.html">Vibrate Device</a>
+
+        <a href="/Documentation/contentGraph.md.html">View Content Graph</a>
+
+        <a href="/Documentation/wait.md.html">Wait</a>
+
+        <a href="/Documentation/waitToReturn.md.html">Wait to return</a>
+
+        <a href="/Documentation/urlContents.md.html">Webpage Contents</a>
     </div>
-  </body>
+</body>
+
 </html>

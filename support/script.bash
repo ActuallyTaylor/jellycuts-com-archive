@@ -1,0 +1,1 @@
+for i in ./markdown/*.md ; do echo "$i" && pandoc -c ./template.css -s $i -o $i.html ; done
