@@ -1,7 +1,10 @@
 # Menu
+
 ## Notes
 Menus allow you to give the user a bunch of options to work with. All options in the upper list must have a case associated with it.
+
 ## Syntax
+
 ```
 menu(<#String (Allows Variables)#>, <#Array#>) {
 	case(<#String (No Variables)#>):
@@ -12,6 +15,7 @@ menu(<#String (Allows Variables)#>, <#Array#>) {
 	
 }
 ```
+
 ## Example
 ```
 menu("Choose an action", ["Log Water", "Workout"]) {

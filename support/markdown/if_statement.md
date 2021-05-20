@@ -1,4 +1,5 @@
 # If Statement
+
 ## Notes
 Condition | Shortcut Equivalent
 * == | is
@@ -14,12 +15,15 @@ Condition | Shortcut Equivalent
 * > | Greater than
 * >= | Greater than or equal to
 * .between numb1...numb2 | Between
+
 ## Syntax
+
 ```
 if(<#Variable#> <#Condition#> <#Variable#>) {
 	•Actions•
 }
 ```
+
 ## Example
 ```
 if(name .contains "TestName") {

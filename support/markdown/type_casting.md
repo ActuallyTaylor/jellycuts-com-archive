@@ -1,4 +1,5 @@
 # Type Casting
+
 ## Notes
 When using a variable you can add this onto the end of it to convert it too another type. All available types are case sensitive.
 Available Types
@@ -26,10 +27,13 @@ Available Types
 22. Text
 23. URL
 24. VCard
+
 ## Syntax
+
 ```
 .as(<#Casting Type#>)
 ```
+
 ## Example
 ```
 var x = Shortcut Input.as(Text)

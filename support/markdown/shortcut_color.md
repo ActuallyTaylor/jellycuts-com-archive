@@ -1,4 +1,5 @@
 # Shortcut Color
+
 ## Notes
 Shortcut Colors and Icons can be declared really easily at the top of the file. You can also create icons visually with the Icon Creator found in the tools menu.
 **Color names**
@@ -17,10 +18,13 @@ Shortcut Colors and Icons can be declared really easily at the top of the file. 
  *[](255) → grayblue
  *[](3031607807) → graygreen
  *[](2846468607) → graybrown
+
 ## Syntax
+
 ```
 #Color <#Color Name#>, #Icon <#Icon Name#>
 ```
+
 ## Example
 ```
 #Color red, #Icon apple

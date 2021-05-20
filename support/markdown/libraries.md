@@ -1,4 +1,5 @@
 # Importing Libraries
+
 ## Notes
 Importing a package allows you to import actions from your favorite apps.
 ### Supported Libraries
@@ -7,10 +8,13 @@ Importing a package allows you to import actions from your favorite apps.
 	2. 1050.24 - iOS 13
 	3. 788 - iOS 12
 
+
 ## Syntax
+
 ```
 import <#Package#> <#Double#>
 ```
+
 ## Example
 ```
 import Shortcuts 1092.6

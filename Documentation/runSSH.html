@@ -14,7 +14,7 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="template.css" />
+  <link rel="stylesheet" href="./template.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -22,7 +22,8 @@
 <body>
 <h1 id="run-script-over-ssh">Run Script Over SSH</h1>
 <h2 id="notes">Notes</h2>
-<p>Runs the given script over an SSH connection. ## Syntax</p>
+<p>Runs the given script over an SSH connection.</p>
+<h2 id="syntax">Syntax</h2>
 <pre><code>runSSH(host: &lt;#String (Allows Variables)#&gt;, port: &lt;#String (Allows Variables)#&gt;, user: &lt;#String (Allows Variables)#&gt;, auth: &lt;#Type (WFSSHAuthenticationType)#&gt;, password: &lt;#String (Allows Variables)#&gt;, script: &lt;#Variable#&gt;)</code></pre>
 <h2 id="example">Example</h2>
 <pre><code>runSSH(host: &quot;pi_address&quot;, port: &quot;22&quot;, user: &quot;raspberry&quot;, auth: password, password: &quot;••••••••&quot;, script: Shortcut Input)</code></pre>
