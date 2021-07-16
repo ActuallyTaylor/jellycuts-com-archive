@@ -6,13 +6,13 @@
             <title>1.0</title>
             <pubDate>Thu, 15 Jul 2021 23:06:34 -0400</pubDate>
             <sparkle:minimumSystemVersion>11.3</sparkle:minimumSystemVersion>
-            <enclosure url="https://jellycuts.com/archives/Jellycuts%201.0(4).zip" sparkle:version="4" sparkle:shortVersionString="1.0" length="6022647" type="application/octet-stream"/>
+            <enclosure url="https://jellycuts.com/archives/Jellycuts_1.0_4.zip" sparkle:version="4" sparkle:shortVersionString="1.0" length="6022647" type="application/octet-stream"/>
         </item>
         <item>
             <title>1.0</title>
             <pubDate>Thu, 15 Jul 2021 23:09:14 -0400</pubDate>
             <sparkle:minimumSystemVersion>11.3</sparkle:minimumSystemVersion>
-            <enclosure url="https://jellycuts.com/archives/Jellycuts%201.0(5).zip" sparkle:version="5" sparkle:shortVersionString="1.0" length="6022633" type="application/octet-stream"/>
+            <enclosure url="https://jellycuts.com/archives/Jellycuts_1.0_5.zip" sparkle:version="5" sparkle:shortVersionString="1.0" length="6022633" type="application/octet-stream"/>
         </item>
     </channel>
 </rss>
