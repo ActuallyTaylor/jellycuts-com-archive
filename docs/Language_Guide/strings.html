@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jelly Documentation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="MiniBar" id="MiniBar">
+        <a id="MenuButton" href="javascript:void(0)" class="MenuButton" onclick="handleNav()">&times;</a>
+    </div>
+    <div class="SideBar" id="SideBar">
+        <a href="../index.html" class="SidebarItem">
+            <div class="HStack VerticalyCentered">
+                <img class="Logo" src="../assets/logo.png" width="50" height="50" />
+                <h1 class="LogoHeader">Jelly</h1>
+            </div>
+        </a>
+        <hr>
+        <a class="SidebarItem" href="../Getting_Started/language_overview.html">
+            <h1 class="SidebarItemHeader">Getting Started</h1>
+        </a>
+        <hr>
+        <a class="SidebarItem" href="./basics.html">
+            <h1 class="SidebarItemHeader">Language Guide</h1>
+        </a>
+        <ol>
+            <a href="./basics.html">
+                <p>The Basics</p>
+            </a>
+            <a href="./importing.html">
+                <p>Importing Libraries</p>
+            </a>
+            <a href="./variables.html">
+                <p>Traditional Variables</p>
+            </a>
+            <a href="./magic_variables.html">
+                <p>Magic Variables</p>
+            </a>
+            <a href="./strings.html">
+                <p><b>Strings</b></p>
+            </a>
+            <a href="./metadata.html">
+                <p>Declared Metadata</p>
+            </a>
+            <a href="./property.html">
+                <p>Property Modifier</p>
+            </a>
+            <a href="./key.html">
+                <p>Key Modifier</p>
+            </a>
+            <a href="./type.html">
+                <p>Type Casting</p>
+            </a>
+            <a href="./if_else.html">
+                <p>If & Else Statments</p>
+            </a>
+            <a href="./repeat.html">
+                <p>Repeat & Repeat Each</p>
+            </a>
+        </ol>
+
+        <hr>
+        <a class="SidebarItem" href="../Shortcuts_Standard_Library/index.html">
+            <h1 class="SidebarItemHeader">Shortcuts Standard Library</h1>
+        </a>
+        <hr>
+        <div class="HStack VerticalyCentered" style="margin-top: 10px;">
+            <a class="SidebarItem" href="https://jellycuts.com">
+                <h1 class="SidebarButton" style="width: 20px;height: 20px; font-size: 14px;">🏠</h1>
+            </a>
+            <a class="SidebarItem" href="javascript:void(0)" onclick="handleNav()">
+                <h1 class="SidebarButton" style="width: 125px;height: 20px;">Close Sidebar</h1>
+            </a>
+        </div>
+        <div style="margin-bottom: 40px;">
+        </div>
+    </div>
+    <div class="Main" id="Main">
+        <h1>Strings</h1>
+        <p>Strings in Jelly are used in functions, and setting variables. To declare a String you can use the following syntax</p>
+        <pre><code>&quot;String Content&quot;</code></pre>
+        <p>or you can have a multiline string</p>
+        <pre><code>&quot;&quot;&quot;
+String Content
+&quot;&quot;&quot;
+</code></pre>
+        <h3 id='tricky-things-with-strings'>Tricky things with strings</h3>
+        <p>If you wish to include a &quot; in your string you must escape it using a backslash \ . These backslashes will be automatically removed when you build the Jellycut. </p>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>

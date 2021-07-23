@@ -1,0 +1,1 @@
+Metadata is important for the functioning of the Jellycuts  app. It is not needed for the functioning of the Jelly language. The currently supported Metadata is Color and Icon. These two values tell the Jellycuts app the icon that you want your Jellycut to export with. Metadata is declared using a # followed by the metadata's tag.  
