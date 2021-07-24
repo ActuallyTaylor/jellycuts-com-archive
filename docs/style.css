@@ -173,7 +173,7 @@ pre {
     font-size: 25px;
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     display: none;
 }
 
