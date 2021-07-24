@@ -64,9 +64,8 @@
         <p>Once you have completed that you can open &quot;Starter Jellycut&quot; to get started with this tutorial.
         </p>
         <h2 id='lets-get-started'>Let&#39;s get started</h2>
-        <p>This is what you will first see when you either, create a new project or open &quot;Starter Jellycut&quot;. At the very top of the file you will see an import Statement. This important statement is importing the [[Standard Shortcuts Library]]
-            with a version of 1092.6 (What this means is covered more in the article on the Standard Shortcuts Library). The next line will be the metadata definition. This metadata tell&#39;s Jellycuts some things about the how it should export the Shortcut,
-            such as the Color and Icon. The full list of values for these flags can be found on the page covering [[Metadata]].
+        <p>This is what you will first see when you either, create a new project or open &quot;Starter Jellycut&quot;. At the very top of the file you will see an import Statement. This important statement is importing the <a href="../Shortcuts_Standard_Library/index.html">Standard Shortcuts Library</a>            with a version of 1092.6 (What this means is covered more in the article on the Standard Shortcuts Library). The next line will be the metadata definition. This metadata tell&#39;s Jellycuts some things about the how it should export the Shortcut,
+            such as the Color and Icon. The full list of values for these flags can be found on the page covering <a href="../Language_Guide/metadata.html">Metadata</a>.
         </p>
         <pre>
             <code>
@@ -79,13 +78,13 @@ import Shortcuts 1092.6
             <code>
 text(text: &quot;Hello World!&quot;)</code>
         </pre>
-        <p>Next you want to add a [[Magic Variable]] to the end of this line so we can get the value out of the text block and into our display function</p>
+        <p>Next you want to add a <a href="../Language_Guide/magic_variables.html">Magic Variable</a> to the end of this line so we can get the value out of the text block and into our display function</p>
         <pre>
             <code>
 text(text: &quot;Hello World!&quot;) &gt;&gt; introduction</code>
         </pre>
         <p>After that we are going to add in our display function. Currently the best way to display a short amount of text to a the user is to show it in an alert. As you can see we are using String interpolation to insert our variable into the alert text.
-            This is gone over more in depth in the [[Strings]] article.</p>
+            This is gone over more in depth in the <a href="../Language_Guide/strings.html">Strings</a> article.</p>
         <pre>
             <code>
 alert(alert: &quot;${introduction}&quot;)</code>
@@ -100,7 +99,8 @@ text(text: &quot;Hello World!&quot;) &gt;&gt; introduction
 alert(alert: &quot;${introduction}&quot;)</code>
         </pre>
         <h2 id='next-steps'>Next steps</h2>
-        <p>Now that you have written your first Jellycut, you can either jump right into writing more or read the more of the documentation. To start I would recommend reading over the [[Language Guide]] to find more information about the Jelly language.</p>
+        <p>Now that you have written your first Jellycut, you can either jump right into writing more or read the more of the documentation. To start I would recommend reading over the <a href="../Language_Guide/basics.html">Language Guide</a> to find more
+            information about the Jelly language.</p>
     </div>
 
 </body>
