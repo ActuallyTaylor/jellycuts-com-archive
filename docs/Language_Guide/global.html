@@ -32,7 +32,7 @@
         </a>
         <ol>
             <a href="./basics.html">
-                <p><b>The Basics</b></p>
+                <p>The Basics</p>
             </a>
             <a href="./importing.html">
                 <p>Importing Libraries</p>
@@ -44,7 +44,7 @@
                 <p>Magic Variables</p>
             </a>
             <a href="./global.html">
-                <p>Global Variables</p>
+                <p><b>Global Variables</b></p>
             </a>
             <a href="./strings.html">
                 <p>Strings</p>
@@ -86,13 +86,76 @@
         </div>
     </div>
     <div class="Main" id="Main">
-        <h1>The Basics</h1>
-        <p>Jelly is an extremely simple language, it pulls from Swift and Javascript for most of it's syntax. However some parts of the language like Metadata are Jelly specific. If you already know one of these languages, learning Jelly should not be very
-            hard. If you do not know either of these languages, the language guide will walk you though everything you need to know.
+        <h1 id='global-variables'>Global Variables</h1>
+        <p>Global variables, like magic variables are not mutable. These variables are available anywhere in a shortcut, and are used like any other variable that you would normally declare. They can be used within text, by using the
+            <code>${}</code> syntax just like any other variable.</p>
+        <h2 id='available-global-variables'>Available Global Variables</h2>
+        <ol start=''>
+            <li>Shortcut Input</li>
+            <li>Clipboard</li>
+            <li>Current Date</li>
+            <li>Ask</li>
+
+        </ol>
+        <h2 id='shortcut-input'>Shortcut Input</h2>
+        <p>Shortcut input can be used to retrieve whatever input was sent into the Shortcut. Shortcut input can be any of the following
         </p>
-        <h2>How to go through this guide</h2>
-        <p>I would recommend getting started by reading <a href="../Getting_Started/writing_first_script.html">Writing Your First Script</a> in the <a href="../Getting_Started/language_overview.html">Getting Started</a> section. After you have written a
-            simple script, look at this section for topics you do not understand or want to understand more about.</p>
+        <ol start=''>
+            <li>App Store Apps</li>
+            <li>Articles</li>
+            <li>Contacts</li>
+            <li>Dates</li>
+            <li>Email Addresses</li>
+            <li>Files</li>
+            <li>Images</li>
+            <li>iTunes Prodcuts</li>
+            <li>Locations</li>
+            <li>Map Links</li>
+            <li>Media</li>
+            <li>PDFs</li>
+            <li>Phone Numbers</li>
+            <li>Rich Text</li>
+            <li>Safari Web Pages</li>
+            <li>Text</li>
+            <li>URLs</li>
+
+        </ol>
+        <h3 id='usage-1'>Usage</h3>
+        <pre><code>//Inside Text
+Text(&quot;Hello ${Shortcut Input}&quot;)
+
+//Assiging a variable to the shortcut input
+var input = Shortcut Input
+</code></pre>
+        <h2 id='clipboard'>Clipboard</h2>
+        <p>This global variable will get the current item in the clipboard.</p>
+        <h3 id='usage-2'>Usage</h3>
+        <pre><code>//Inside Text
+Text(&quot;Hello ${Clipboard}&quot;)
+
+//Assiging a variable to the current clipboard
+var clippy = Clipboard
+</code></pre>
+        <h2 id='current-date'>Current Date</h2>
+        <p>This global variable will get the current date.</p>
+        <h3 id='usage-3'>Usage</h3>
+        <pre><code>//Inside Text
+Text(&quot;Hello ${Current Date}&quot;)
+
+//Assiging a variable to the current Current Date
+var bestDayEver = Current Date
+</code></pre>
+        <h2 id='ask'>Ask</h2>
+        <p>This variable will tell shortcuts that it needs to ask the user for the value it should represent. So if you wanted to ask the user their name to say hello, you could put ask into a string with the text hello in front of it. </p>
+        <h3 id='usage-4'>Usage</h3>
+        <pre><code>//Ask the user there name
+Text(&quot;Hello ${Ask}&quot;)
+
+//Assiging a variable to a varaible the user should input
+var bestDayEver = Ask
+</code></pre>
+        <h2>Global Variables within a string</h2>
+        <p>Check out the <a href="./strings.html">Strings</a> documentation to see how to place a global variable into a string</p>
     </div>
 
 </body>
