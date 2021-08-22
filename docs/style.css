@@ -185,3 +185,11 @@ pre {
         display: block;
     }
 }
+
+.bulletImage {
+    width: 25px;
+    height: 25px;
+    background-color: #1a242f;
+    padding: 3px;
+    border-radius: 7px;
+}

@@ -1,1 +1,0 @@
-The version corresponds with the version of Shortcut that will be exported when you turn your Jellycut into a shortcut. 1092.6 is a version of shortcut that is supported on all iOS 14 versions of Shortcuts. If your device is on iOS 13 when you create a new Shortcut, this string will be different
