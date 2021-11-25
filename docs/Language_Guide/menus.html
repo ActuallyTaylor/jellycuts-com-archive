@@ -59,7 +59,7 @@
                 <p>Key Modifier</p>
             </a>
             <a href="./type.html">
-                <p><b>Type Casting</b></p>
+                <p>Type Casting</p>
             </a>
             <a href="./if_else.html">
                 <p>If & Else Statments</p>
@@ -71,8 +71,9 @@
                 <p>Functions & Macros</p>
             </a>
             <a href="./menus.html">
-                <p>Menus</p>
+              <p><b>Menus</b></p>
             </a>
+
         </ol>
 
         <hr>
@@ -101,39 +102,24 @@
         </div>
     </div>
     <div class="Main" id="Main">
-        <h1>Type Casting</h1>
-        <p>Since variables in Jelly have no specific type when they are declared, you will need to tell some functions how they should treat a variable. To get started add the following syntax after a variable
-            <code>.as(&lt;#Casting Type#&gt;)</code>. This will tell Jelly how it should treat the given variable.
-        </p>
-        <p>An example of this in action, is creating a variable named <code>textInput</code> and assigning it to the Shortcut Input as text. This will create a variable that maps to the Shortcut Input casted to Text</p>
-        <pre><code>var textInput = Shortcut Input.as(Text)</code></pre>
-        <h2>Casting Types</h2>
-        <ol>
-            <li>AppStore</li>
-            <li>Article</li>
-            <li>Boolean</li>
-            <li>Contact</li>
-            <li>Date</li>
-            <li>Dictionary</li>
-            <li>Email</li>
-            <li>File</li>
-            <li>Image</li>
-            <li>iMedia</li>
-            <li>iProduct</li>
-            <li>Location</li>
-            <li>MapLink</li>
-            <li>Media</li>
-            <li>Number</li>
-            <li>PDF</li>
-            <li>PhoneNumber</li>
-            <li>Photo</li>
-            <li>Place</li>
-            <li>RichText</li>
-            <li>Webpage</li>
-            <li>Text</li>
-            <li>URL</li>
-            <li>VCard</li>
-        </ol>
+      <h1>Menu Statements</h1>
+      <p>Menus act as a way for the user to select from different options. This directly corresponds to shortcut's Menu Action. Any code put inside a <code>case</code> statement will be executed when the user selected that case. The Array in the declaration tells the menu what cases should be recognized. If a case is not in this array, it will not be recognized.  </p>
+      <pre><code>menu(&lt;#String (Allows Variables)#&gt;, &lt;#Array#&gt;) {
+  case(&lt;#String (No Variables)#&gt;):
+    &lt;#Code#&gt;
+          
+  case(&lt;#String (No Variables)#&gt;):
+    &lt;#Code#&gt;
+          
+}</code></pre>
+      <p>The following is an example of a filled out menu.</p>
+      <pre><code>menu("Select an action", ["Log Water", "Workout"]) {
+  case("Log Water"):
+    runShortcut(Log Water)
+  case("Workout"):
+    runShortcut(Workout)
+}</code></pre>
+      
     </div>
 
 </body>
