@@ -102,7 +102,7 @@
     </div>
     <div class="Main" id="Main">
         <h1 id='global-variables'>Functions & Macros</h1>
-        <p>Functions and Macros are close to each other but not the same. There is <strong>one</strong> big difference between the two. A macro will copy the code inside of it to wherever you call it. And a function will create a call to the code that is inside of it. The rest of this page will dive into how the two differ, along with how they are represented inside of shortcuts.</p>
+        <p>Functions and Macros are close to each other but not the same. There is <strong>one</strong> big difference between the two. A macro will copy the code inside it to wherever you call it. And a function will create a call to the code that is inside it. The rest of this page will dive into how the two differ, along with how they are represented inside shortcuts.</p>
         <h4 data-heading="Important Note">Important Note</h4>
         <p>Both functions &amp; macros must be defined before they are called. You can not call a function before it has been defined. For example:</p>
         <pre>
@@ -113,7 +113,7 @@ test()</code></pre>
 test()
 func test() { }</code></pre>
         <h2 data-heading="Functions">Functions</h2>
-        <p>In the following code we create a function called <code>lookAt</code> which takes the parameter input. Inside of the function, you are able to use the input parameter as a mutable variable, however it will not mutate the variable you pass when the function as called. This is because on a function call, the parameter values are copied, not referenced.</p>
+        <p>In the following code, we create a function called <code>lookAt</code> which takes the parameter input. Inside the function, you are able to use the input parameter as a mutable variable, however it will not mutate the variable you pass when the function as called. This is because on a function call, the parameter values are copied, not referenced.</p>
         <pre><code>// Function in Jelly
 func lookAt(input) {
     quicklook(input: input)
@@ -121,7 +121,7 @@ func lookAt(input) {
 }
         
 lookAt(Shortcut Input)</code></pre>
-        <p>The below section is what the above code will produce in Shortcuts. As you can see, the function makes a call to the current shortcut that it is running in with a dictionary that instructs the shortcut on what part of the shortcut it should run. This allows for function variables to be completely separate from the rest of your shortcuts variables.</p>
+        <p>The below section is what the above code will produce in Shortcuts. As you can see, the function makes a call to the current shortcut that it is running in, with a dictionary that instructs the shortcut on what part of the shortcut it should run. This allows for function variables to be completely separate from the rest of your shortcuts variables.</p>
         <pre><code>// Transcribed Shortcuts Actions
 IF Shortcut Input AS Dictionary WITH Key FUNCTION_CALL_NAME IS lookAt {
     // Your function code
@@ -143,20 +143,20 @@ IF Shortcut Input AS Dictionary WITH Key FUNCTION_CALL_NAME IS lookAt {
 var almostMeaningOfLife = 2
 add40(almostMeaningOfLife) &gt;&gt; meaningOfLife
 quicklook(meaningOfLife)</code></pre>
-        <p>In this example we have a function, <code>add40</code> which takes in our input and adds 40 to it. Then we return this newly calculated value by using the <code>return</code> statement followed by our variable name. To extract the variable name from the function we use the <code>&gt;&gt;</code> operator followed by the new magic variable name.</p>
+        <p>In this example we have a function, <code>add40</code> which takes in our input and adds 40 to it. Then we return this newly calculated value by using the <code>return</code> statement followed by our variable name. To extract the variable output from the function, we use the <code>&gt;&gt;</code> operator followed by the new magic variable name.</p>
         <h2 data-heading="Macros">Macros</h2>
-        <p>In the following code we will replicate the function <code>lookAt</code> that we created above, but this time we are going to define it as a macro. Defining it as a macro means that we will now be copying the code from inside the macro to where we call it. </p>
+        <p>In the following code, we will replicate the function <code>lookAt</code> that we created above, but this time we are going to define it as a macro. Defining it as a macro means that we will now be copying the code from inside the macro to where we call it. </p>
         <pre><code>// Macro in Jelly
 macro lookAt(input) {
     quicklook(input: input)
 }
         
 lookAt(Shortcut Input)</code></pre>
-        <p>The shortcuts actions that are created are much shorter now because their is no need for restructuring. The code is simply copied from inside the macro to where it is called and a variable is created to represent the parameters.</p>
+        <p>The shortcuts actions that are created are much shorter now because there is no need for restructuring. The code is simply copied from inside the macro to where it is called, and a variable is created to represent the parameters.</p>
         <pre><code>// Transcribed Shortcuts Actions
 var input = Shortcut Input
 QUICKLOOK input</code></pre>
-        <p>Because of the nature of macros it is possible to edit variables that have been created before the macro is called, inside of the macro. This can look like the following:</p>
+        <p>Because of the nature of macros, it is possible to edit variables that have been created before the macro is called, inside the macro. This can look like the following:</p>
         <pre><code>var x = Current Date
         
 macro lookAt(input) {
@@ -169,7 +169,7 @@ macro lookAt(input) {
         
     lookAt(input: Shortcut Input)</code></pre>
         <h3 data-heading="Returning data from macros">Returning data from macros</h3>
-        <p>Returning data from a macro is exactly the same as a function. It is also a two step process that starts with including a <code>return</code> statement in the macro, followed by adding a magic variable to the macro call.</p>
+        <p>Returning data from a macro is exactly the same as a function. It is also a two-step process that starts with including a <code>return</code> statement in the macro, followed by adding a magic variable to the macro call.</p>
         <p>A quick example of this:</p>
         <pre><code>macro subtract40(input) {
     calculate("${input} + 40") &gt;&gt; hold
@@ -179,7 +179,7 @@ macro lookAt(input) {
 var almostMeaningOfLife = 82
 subtract40(almostMeaningOfLife) &gt;&gt; meaningOfLife
 quicklook(meaningOfLife)</code></pre>
-        <p>In this example we have a macro, <code>subtract40</code> which takes in our input and subtracts 40 from it. Then we return this newly calculated value by using the <code>return</code> statement followed by our variable name. To extract the variable name from the macro, we use the <code>&gt;&gt;</code> operator followed by the new magic variable name.</p>
+        <p>In this example we have a macro, <code>subtract40</code> which takes in our input and subtracts 40 from it. Then we return this newly calculated value by using the <code>return</code> statement followed by our variable name. To extract the variable output from the macro, we use the <code>&gt;&gt;</code> operator followed by the new magic variable name.</p>
                     </div>
 
 </body>
