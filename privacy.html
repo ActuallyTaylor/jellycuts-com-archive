@@ -35,10 +35,13 @@
       </div>
     </div>
     <div class="explanationDiv">
+      <h1>Your Data Inside of Jellycuts</h1>
       <p class="paragraph">
-        Jellycuts takes privacy extremely seriously.
-        The only data that is collected is anonymously collected by apple and can be turned off in settings by going to
-        Settings -> Privacy  -> Analytics and Improvments -> and turning off Share iPhone analytics, or turning off Share With Developers.
+        While you use Jellycuts, NO data about your usage is collected. When the app first starts, it requests a JSON file from a server. This file contains information about the Jellycuts helper and the current app version. When you connect, this is NOT visible by the developer and is NOT used to track any data about you. All of your projects and files are stored within iCloud, and Cloud Kit storage.
+      </p>
+      <h1>Your Data Outside of Jellycuts</h1>
+      <p class="paragraph">
+        On iOS and iPadOS 15, Jellycuts will connect to a server for signing the current Jellycut file. This is needed because of changes in iOS 15 and iPadOS Shortcuts sharing which required verified shortcuts. Each file you upload is not saved, and NEVER seen by a human, these files are uploaded and then sent back to you signed. When you connect to this server, your IP may be logged temporally by Heroku but is NOT used for tracking.
       </p>
   </body>
 </html>
